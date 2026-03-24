@@ -1,4 +1,4 @@
-# 🚀 Adaptive Learning System (AI-Powered)
+# Adaptive Learning System (AI-Powered)
 
 An **AI-driven adaptive learning backend** that personalizes student learning using real-time performance tracking, analytics, and intelligent feedback generation.
 
@@ -6,18 +6,18 @@ Built with **FastAPI, PostgreSQL, SQLAlchemy, and Groq AI**, this system dynamic
 
 ---
 
-## 🌟 Key Highlights
+##  Key Highlights
 
-- 🎯 Personalized learning through AI-generated feedback
-- 📊 Performance analytics by student and topic
-- 🧠 Adaptive question generation using LLMs (Groq)
-- ⚡ High-performance async backend (FastAPI + asyncpg)
-- 🗄️ Scalable PostgreSQL database design
-- 📚 Clean architecture (routers, services, models)
+-  Personalized learning through AI-generated feedback
+-  Performance analytics by student and topic
+-  Adaptive question generation using LLMs (Groq)
+-  High-performance async backend (FastAPI + asyncpg)
+-  Scalable PostgreSQL database design
+-  Clean architecture (routers, services, models)
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 ```
 Client (Swagger / Frontend)
@@ -33,7 +33,7 @@ PostgreSQL (Aiven / Local)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer        | Technology |
 |-------------|-----------|
@@ -47,7 +47,7 @@ PostgreSQL (Aiven / Local)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Backend/
@@ -78,9 +78,9 @@ Backend/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 1. Clone / Create Project
+### 1. Create Project
 
 ```bash
 git clone <your-repo-link>
@@ -91,26 +91,24 @@ cd Adaptive-Learning-System/Backend
 
 ### 2. Create Virtual Environment
 
-```powershell
+powershell
 python -m venv venv
 .\venv\Scripts\activate
-```
 
 ---
 
 ### 3. Install Dependencies
 
-```powershell
+powershell
 pip install -r requirements.txt
-```
 
 ---
 
 ### 4. Configure Environment Variables
 
-Create `.env`:
+Create .env:
 
-```env
+env
 APP_NAME=Adaptive Learning System
 DEBUG=True
 
@@ -118,7 +116,7 @@ DATABASE_URL=postgresql+asyncpg://username:password@host:port/database_name
 
 GROQ_API_KEY=your_api_key
 GROQ_MODEL=llama-3.1-8b-instant
-```
+
 
 ---
 
@@ -140,29 +138,29 @@ uvicorn main:app --reload
 
 ### 7. Access API Docs
 
-👉 http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/docs
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
-### 👤 Students
+### Students
 - `POST /students` → Create student
 - `GET /students/{id}` → Get student
 
-### 📝 Quiz
+### Quiz
 - `POST /quiz/submit-answer` → Submit answer + AI feedback
 - `GET /quiz/student-progress/{id}` → Track performance
 
-### 📊 Analytics
+### Analytics
 - `GET /analytics/struggling-students`
 - `GET /analytics/hardest-topics`
 - `GET /analytics/student-report/{id}`
 
-### 🤖 AI
+### AI
 - `POST /ai/generate-question`
 
-```json
+json
 {
   "topic": "Python",
   "difficulty": "easy"
@@ -171,7 +169,7 @@ uvicorn main:app --reload
 
 ---
 
-## 🔄 System Workflow
+## System Workflow
 
 1. Student registers
 2. Student answers quiz question
@@ -183,7 +181,7 @@ uvicorn main:app --reload
 
 ---
 
-## 📊 Example Use Case
+## Example Use Case
 
 - Identify weak topics per student
 - Automatically generate practice questions
@@ -191,27 +189,27 @@ uvicorn main:app --reload
 - Track learning progress over time
 
 
-## 🚀 Future Improvements
+## Future Improvements
 
-- 🔐 Authentication (JWT)
-- 🌐 Frontend (React / Next.js)
-- 📈 Advanced AI grading (semantic similarity)
-- 🐳 Dockerization
-- ☁️ Cloud deployment (AWS / Render)
-- 🎯 Recommendation engine
+-  Authentication (JWT)
+-  Frontend (React / Next.js)
+-  Advanced AI grading (semantic similarity)
+-  Dockerization
+-  Cloud deployment (AWS / Render)
+-  Recommendation engine
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Rael Mwiti**  
-Data Analyst → AI & Data Science  
+Data Scientist → AI & Data Science  
 
 Passionate about building intelligent systems that combine **data, AI, and real-world impact**.
 
 ---
 
-## 📌 Project Value
+## Project Value
 
 This project demonstrates:
 
@@ -220,3 +218,5 @@ This project demonstrates:
 - AI integration (LLMs in production workflows)
 - Real-world system design (adaptive learning)
 - Clean and scalable architecture
+
+Thank you!!!
