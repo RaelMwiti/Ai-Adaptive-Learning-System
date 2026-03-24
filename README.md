@@ -82,16 +82,13 @@ Backend/
 
 ### 1. Create Project
 
-```bash
-git clone <your-repo-link>
 cd Adaptive-Learning-System/Backend
-```
+
 
 ---
 
 ### 2. Create Virtual Environment
 
-powershell
 python -m venv venv
 .\venv\Scripts\activate
 
@@ -99,7 +96,6 @@ python -m venv venv
 
 ### 3. Install Dependencies
 
-powershell
 pip install -r requirements.txt
 
 ---
@@ -122,17 +118,14 @@ GROQ_MODEL=llama-3.1-8b-instant
 
 ### 5. Initialize Database
 
-```powershell
 python init_db.py
-```
 
 ---
 
 ### 6. Run Application
 
-```powershell
+
 uvicorn main:app --reload
-```
 
 ---
 
